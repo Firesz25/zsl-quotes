@@ -1,0 +1,18 @@
+[package]
+name = "zsl-quotes"
+version = "0.1.0"
+edition = "2021"
+authors = ["firesz25 <olek.cz@outlook.com>"]
+
+[workspace]
+members = [".", "entity", "migration"]
+
+[dependencies]
+actix-web = "4.0.1"
+sea-orm = { version = "0.7.1", default-features = false, features = ["sqlx-mysql", "macros", "with-chrono", "runtime-actix-native-tls"] }
+tracing-subscriber = "0.3.9"
+entity = { path = "entity" }
+migration = { path = "migration" }
+ron = "0.7.0"
+serde = "1.0.136"
+rand = "0.8.5"
