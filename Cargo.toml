@@ -9,7 +9,7 @@ members = [".", "entity", "migration"]
 
 [dependencies]
 actix-web = "4.0.1"
-sea-orm = { version = "0.7.1", default-features = false, features = ["sqlx-mysql", "macros", "with-chrono", "runtime-actix-native-tls"] }
+sea-orm = { version = "0.7.1", default-features = false, features = ["sqlx-mysql", "macros", "with-chrono", "runtime-actix-rustls"] }
 tracing-subscriber = "0.3.9"
 entity = { path = "entity" }
 migration = { path = "migration" }

@@ -9,4 +9,4 @@ publish = false
 [dependencies]
 chrono = "0.4.19"
 serde = { version = "1.0.136", features = ["derive"] }
-sea-orm = { version = "0.7.1", default-features = false, features = ["sqlx-mysql", "macros", "with-chrono", "runtime-actix-native-tls", "debug-print"] }
+sea-orm = { version = "0.7.1", default-features = false, features = ["sqlx-mysql", "macros", "with-chrono", "runtime-actix-rustls", "debug-print"] }
